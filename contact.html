@@ -16,7 +16,7 @@
 		<nav
 			class="py-[18px] px-20 relative flex justify-center lg:justify-between items-center"
 		>
-			<button class="absolute left-6 md:left-[30px] lg:hidden">
+			<button id="menu-toggle" class="absolute left-6 md:left-[30px] lg:hidden">
 				<img src="./assets/Menu.png" alt="hamburger" />
 			</button>
 			<a href="index.html"><img src="./assets/logo.svg" alt="logo" /></a>
@@ -25,6 +25,20 @@
 				class="hidden lg:inline-block rounded-[34px] bg-[#008FD9] text-base py-3 px-[31px] text-white leading-5"
 				>Contact</a
 			>
+			<div
+				id="mobile-menu"
+				class="hidden z-10 p-5 absolute left-2 md:left-[15px] w-56 top-16 rounded-md bg-white/70 shadow-lg focus:outline-none"
+				role="menu"
+				aria-orientation="vertical"
+				aria-labelledby="menu-button"
+				tabindex="-1"
+			>
+				<a
+					href="contact.html"
+					class="rounded-[34px] block w-full text-center bg-[#008FD9] text-base py-3 px-[31px] text-white leading-5"
+					>Contact</a
+				>
+			</div>
 		</nav>
 		<section
 			class="bg-[#F2F9FD] px-6 md:px-20 lg:px-32 py-10 md:py-12 lg:py-20 flex flex-col"
